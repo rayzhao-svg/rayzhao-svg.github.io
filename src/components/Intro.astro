@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import portrait from "../assets/yuanrui-zhao.jpg";
+---
+
+<section class="hero" aria-labelledby="intro-title">
+  <Image
+    class="portrait"
+    src={portrait}
+    alt="Ray Zhao smiling outdoors at sunset"
+    width={220}
+    height={220}
+    widths={[220, 440]}
+    sizes="(max-width: 640px) 100px, (max-width: 1000px) 180px, 220px"
+    format="webp"
+    fetchpriority="high"
+    decoding="async"
+  />
+  <div class="hero-copy">
+    <p class="hero-name">Yuanrui (Ray) Zhao</p>
+    <h1 id="intro-title">
+      Mathematician, programmer, pianist, calisthenics athlete.
+    </h1>
+    <div class="hero-details">
+      <p>CS &amp; Math + Certificate in Data Science @ Yale '30</p>
+      <p>New Haven, CT</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+---
+const accomplishments = [
+  { name: "USAMO", detail: "Qualifier · 2025" },
+  { name: "USAJMO", detail: "Qualifier · 2024" },
+  { name: "2× USACO Platinum", detail: "Certified · 2025, 2026" },
+  {
+    name: "Codeforces",
+    detail: "Candidate Master · 1961 peak rating",
+  },
+  {
+    name: "LeetCode",
+    detail: "2780 peak rating · Top 0.06%",
+  },
+];
+---
+
+<section
+  id="accomplishments"
+  class="notebook-section"
+  aria-labelledby="accomplishments-title"
+>
+  <div class="section-margin">
+    <h2 id="accomplishments-title" class="section-number">04 / Accomplishments</h2>
+  </div>
+
+  <div>
+    <dl class="accomplishments-list">
+      {accomplishments.map(({ name, detail }) => (
+        <div>
+          <dt>{name}</dt>
+          <dd>{detail}</dd>
+        </div>
+      ))}
+    </dl>
+    <a
+      class="text-link resume-link"
+      href="/resume.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      Résumé (PDF)
+    </a>
+  </div>
+</section>
+
+<style>
+  .resume-link {
+    display: inline-block;
+    margin-top: 24px;
+  }
+</style>

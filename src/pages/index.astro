@@ -1,17 +1,20 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Intro from "../components/Intro.astro";
+import Now from "../components/Now.astro";
+import About from "../components/About.astro";
+import Projects from "../components/Projects.astro";
+import Lab from "../components/Lab.astro";
+import Accomplishments from "../components/Accomplishments.astro";
+import Elsewhere from "../components/Elsewhere.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Yuanrui's Portfolio</h1>
-	</body>
-</html>
+<BaseLayout>
+  <Intro />
+  <Now />
+  <About />
+  <Projects />
+  <Lab />
+  <Accomplishments />
+  <Elsewhere />
+</BaseLayout>
